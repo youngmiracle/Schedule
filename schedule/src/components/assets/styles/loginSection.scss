@@ -1,0 +1,82 @@
+.loginSection{
+  width: 30%;
+  box-shadow: 2px 1px 1px 2px #292d44;
+  border: 5px solid #4B66F5;
+  height: 50%;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  background-color: rgba(217, 217, 217, 0.85);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  animation: appearForm 1s alternate forwards;
+  opacity: 0;
+  .loginSection__titleBlock{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(105deg, #292d44, #4f66ec);
+    font-size: 22px;
+    font-weight: bold;
+    .titleBlock__wand{
+      width: 30%;
+      position: absolute;
+      bottom: -10px;
+      left: 35%;
+      height: 2px;
+      background: linear-gradient(155deg, #4f66ec, #292d44);
+    }
+  }
+  .loginSection__loginForm{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .loginForm__login{
+      width: 100%;
+      position: relative;
+      height: 15%;
+      .loginForm__input{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border-bottom: 5px solid #4f66ec;
+        border-radius: 2px;
+        padding-left: 11%;
+        font-size: 15px;
+      }
+      .loginForm__icon{
+        position: absolute;
+        width: 10%;
+        height: 80%;
+      }
+    }
+    .submitStay{
+      display: flex;
+      flex-direction: row;
+      .submitStay__text{
+        margin-left: 10px;
+        font-size: 15px;
+        color: #000000;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+.loginSectionNone{
+  opacity: 0;
+}
+@keyframes appearForm {
+  100%{
+    opacity: 1;
+  }
+}
