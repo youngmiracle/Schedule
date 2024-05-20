@@ -2,7 +2,7 @@
   width: 30%;
   -webkit-box-shadow: 2px 1px 1px 2px #292d44;
           box-shadow: 2px 1px 1px 2px #292d44;
-  border: 5px solid #4B66F5;
+  border: 2px solid #4B66F5;
   height: 50%;
   position: absolute;
   top: 25%;
@@ -24,32 +24,6 @@
   -webkit-animation: appearForm 1s alternate forwards;
           animation: appearForm 1s alternate forwards;
   opacity: 0;
-}
-.loginSection__closeBtn{
-  background: url(../../assets/images/login/back.png)100% 100% no-repeat;
-  background-size: contain;
-  width: 8%;
-  height: 8%;
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  animation: HoverCloseBtnBack 0.6s forwards ease;
-}
-.loginSection__closeBtn:hover{
-  animation: HoverCloseBtn 0.5s alternate forwards;
-}
-@keyframes HoverCloseBtn {
-  100%{
-    transform: rotate(180deg);
-  }
-}
-@keyframes HoverCloseBtnBack {
-  from{
-    transform: rotate(180deg);
-  }
-  100%{
-    transform: rotate(0deg);
-  }
 }
 .loginSection .loginSection__titleBlock {
   position: relative;
@@ -134,5 +108,31 @@
 @keyframes appearForm {
   100% {
     opacity: 1;
+  }
+}
+.loginSection__closeBtn{
+  position: absolute;
+  width: 6%;
+  height: 6%;
+  background: url(../../assets/images/supportIcon/back.png)100% 100% no-repeat;
+  background-size: contain;
+  top: 6%;
+  right: 5%;
+  animation: HoverCloseBtnBack 0.5s alternate forwards;
+}
+.loginSection__closeBtn:hover{
+  animation: HoverCloseBtn 0.5s alternate forwards;
+}
+@keyframes HoverCloseBtn {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes HoverCloseBtnBack {
+  from{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
   }
 }

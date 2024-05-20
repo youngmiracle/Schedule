@@ -80,3 +80,23 @@ body main {
   width: 100%;
   padding-top: 6vh;
 }
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4B66F5), to(#2C3C8F));
+  background-image: linear-gradient(to right, #4B66F5, #2C3C8F);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #6e6e6e;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-shadow: 1px 1px #585858;
+}

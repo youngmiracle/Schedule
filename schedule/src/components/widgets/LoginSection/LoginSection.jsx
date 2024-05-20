@@ -1,7 +1,7 @@
 import './loginSection.css'
-import BtnLogin from '../../shared/Button/BtnLogin/BtnLogin'
-import passwordImg from '../../assets/images/login/passwordLock.png'
-import profileImg from '../../assets/images/login/profile.png'
+import BtnLogin from '../../shared/Button/BtnLogin/BtnDefolt'
+import passwordImg from '../../assets/images/supportIcon/passwordLock.png'
+import profileImg from '../../assets/images/supportIcon/profile.png'
 
 export default function LoginSection({classLoginForm, clickCloseFormLogin}){
     return(
@@ -27,10 +27,10 @@ export default function LoginSection({classLoginForm, clickCloseFormLogin}){
                 </section>
                 <BtnLogin type={"submit"} style={{
                     position: "relative",
-                    height: "10%",
+                    height: "12%",
                     margin: "0 auto",
                     top: "0"
-                }}/>
+                }}>Войти</BtnLogin>
             </form>
             <button className='loginSection__closeBtn' onClick={clickCloseFormLogin}></button>
         </article>

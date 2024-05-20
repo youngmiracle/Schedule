@@ -1,6 +1,6 @@
 import './header.css'
 import BtnHeader from "../../shared/Button/BtnHeader/BtnHeader";
-import BtnLogin from "../../shared/Button/BtnLogin/BtnLogin";
+import BtnLogin from "../../shared/Button/BtnLogin/BtnDefolt";
 
 
 export function Header({onClickLog}){
@@ -16,7 +16,7 @@ export function Header({onClickLog}){
                     <BtnHeader>Редактировать запись</BtnHeader>
                     <BtnHeader>Создать машину</BtnHeader>
                 </section>
-                <BtnLogin onClick={onClickLog}/>
+                <BtnLogin onClick={onClickLog} style={{position: "absolute", top: '17.5%', right: "3%"}}>Войти</BtnLogin>
             </nav>
         </header>
     )
